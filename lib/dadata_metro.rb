@@ -1,6 +1,5 @@
 require "dadata_metro/version"
+require "dadata_metro/search"
 
 module DadataMetro
-  class Error < StandardError; end
-  # Your code goes here...
 end

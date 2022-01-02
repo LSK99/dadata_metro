@@ -48,7 +48,6 @@ module DadataMetro
       return unless filters
       raise ArgumentError, 'filters should be array' unless filters.is_a?(Array)
       filters.each do |field|
-        pp field.keys.first
         key = field.keys.first
         next if Constants::FILTERS_FIELDS.include? key
         raise ArgumentError, "filter field #{key} not supported"
